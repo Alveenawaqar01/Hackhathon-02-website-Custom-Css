@@ -1,0 +1,68 @@
+
+.about {
+    min-height: 100vh;
+    background-color: #f3f4f6; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+  }
+  
+
+  .about__text {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .about__text--md {
+    text-align: left;
+    width: 50%; 
+    margin-left: 0;
+  }
+  
+  
+  .about__heading {
+    font-size: 3rem; 
+    font-weight: 800; 
+    color: black;
+    margin-bottom: 2.5rem; 
+    margin-left: 0.5rem;
+  }
+  
+  .about__heading--md {
+    font-size: 4rem; /* Equivalent to md:text-6xl */
+  }
+  
+  .about__paragraph {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    color: #4b5563; /* Equivalent to text-gray-800 */
+    margin-bottom: 0.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2.5rem; /* Equivalent to mt-10 */
+  }
+  
+  /* Button Styles */
+  .about__button {
+    background-color: #1e3a8a; /* Equivalent to bg-blue-950 */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem; /* Equivalent to rounded-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 2rem; /* Equivalent to mt-8 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about__button:hover {
+    background-color: #1d4ed8; /* Equivalent to bg-blue-800 */
+    transform: scale(1.05);
+  }
+  
+  .about__button--md {
+    margin-top: 3rem; /* Equivalent to md:mt-12 */
+  }
+  

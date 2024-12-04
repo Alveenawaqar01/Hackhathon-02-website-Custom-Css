@@ -1,0 +1,62 @@
+/* Global styles for footer */
+.footer {
+    background-color: #1e3a8a; /* Blue 950 equivalent */
+    color: white;
+    padding: 24px 0;
+    text-align: center;
+  }
+  
+  /* Footer container */
+  .footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Brand section */
+  .footer__brand-name {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: bold;
+  }
+  
+  /* Footer description */
+  .footer__description {
+    padding: 8px 0;
+  }
+  
+  /* Social Media Icons container */
+  .footer__social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  /* Social Media Icon styles */
+  .footer__social-icon {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effects for social media icons */
+  .footer__social-icon:hover {
+    color: #3b82f6; /* Blue 500 */
+  }
+  
+  .footer__social-icon:hover:nth-child(2) {
+    color: #ec4899; /* Pink 500 for Instagram */
+  }
+  
+  .footer__social-icon:hover:nth-child(3) {
+    color: #38bdf8; /* Blue 300 for Twitter */
+  }
+  
+  .footer__social-icon:hover:nth-child(4) {
+    color: #f59e0b; /* Amber 300 for LinkedIn */
+  }
+  
+  /* Copyright text */
+  .footer__copyright {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+  }
+  

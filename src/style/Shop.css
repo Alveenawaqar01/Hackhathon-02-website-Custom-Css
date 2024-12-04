@@ -1,0 +1,93 @@
+/* Container for the shop page */
+.shop-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+  }
+  
+  /* Shop Title */
+  .shop-title {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: 800; /* Equivalent to font-extrabold */
+    text-align: center;
+    color: #1e3a8a; /* Equivalent to text-blue-950 */
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    transition: color 0.3s;
+  }
+  
+  .shop-title:hover {
+    color: #1d4ed8; /* Equivalent to text-blue-800 */
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; /* Equivalent to gap-8 */
+  }
+  
+  @media (min-width: 640px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* Equivalent to sm:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr); /* Equivalent to md:grid-cols-3 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr); /* Equivalent to lg:grid-cols-3 */
+    }
+  }
+  
+  /* Individual Product Card */
+  .product-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    transition: transform 0.3s, scale 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+  }
+  
+  /* Overlay Effect */
+  .product-card-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(31, 41, 55, 0.5); /* Equivalent to bg-slate-500 */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-card:hover .product-card-overlay {
+    opacity: 0.5; /* Equivalent to group-hover:opacity-50 */
+  }
+  
+  /* View Product Text */
+  .view-product-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .product-card:hover .view-product-text {
+    opacity: 1; /* Equivalent to group-hover:opacity-100 */
+  }
+  
+  .view-product-text span {
+    font-size: 1.125rem; /* Equivalent to text-xl */
+    font-weight: 700; /* Equivalent to font-bold */
+  }
+  

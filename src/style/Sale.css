@@ -1,0 +1,96 @@
+/* Background for the sale page */
+.sale-page {
+    background-color: black;
+    min-height: 100vh;
+  }
+  
+  /* Header section */
+  .sale-header {
+    background-color: white;
+    color: #1e3a8a; /* Equivalent to text-blue-950 */
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .sale-header h1 {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: 800; /* Equivalent to font-extrabold */
+  }
+  
+  /* Main Content */
+  .sale-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  /* Product Grid */
+  .sale-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem; /* Equivalent to gap-6 */
+  }
+  
+  @media (min-width: 640px) {
+    .sale-grid {
+      grid-template-columns: repeat(2, 1fr); /* Equivalent to sm:grid-cols-2 */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .sale-grid {
+      grid-template-columns: repeat(3, 1fr); /* Equivalent to md:grid-cols-3 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .sale-grid {
+      grid-template-columns: repeat(4, 1fr); /* Equivalent to lg:grid-cols-4 */
+    }
+  }
+  
+  /* Product Card */
+  .sale-card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .sale-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Equivalent to hover:shadow-xl */
+    transform: scale(1.05); /* Equivalent to hover:scale-105 */
+  }
+  
+  /* Product Title */
+  .sale-card h3 {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 800; /* Equivalent to font-extrabold */
+    margin-top: 1rem;
+  }
+  
+  /* Price */
+  .sale-card .price {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #1e3a8a; /* Equivalent to text-blue-950 */
+    margin-top: 0.5rem;
+  }
+  
+  /* Button */
+  .sale-card .buy-now {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #1e3a8a; /* Equivalent to bg-blue-950 */
+    color: white;
+    border-radius: 1rem; /* Equivalent to rounded-lg */
+    transition: background-color 0.3s;
+  }
+  
+  .sale-card .buy-now:hover {
+    background-color: #1d4ed8; /* Equivalent to bg-blue-800 */
+  }
+  

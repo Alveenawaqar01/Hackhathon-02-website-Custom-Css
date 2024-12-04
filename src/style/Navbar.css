@@ -1,0 +1,160 @@
+/* Global styles for navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a; /* Blue 950 equivalent */
+  padding: 0 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Brand section */
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between; /* Ensure space between the title and button */
+  width: 100%;
+}
+
+.navbar__title {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Menu icon for mobile */
+.navbar__menu-icon {
+  display: none;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+}
+
+/* Navigation links */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+}
+
+.navbar__links-list {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar__links-list--open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  background-color: #1e3a8a; /* Blue 950 equivalent */
+  z-index: 10;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: #2563eb; /* Blue 800 equivalent */
+}
+
+/* Add to Cart Button - mobile and desktop */
+.navbar__add-to-cart-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.navbar__add-to-cart-btn {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar__add-to-cart-btn:hover {
+  background-color: #2563eb; /* Blue 800 equivalent */
+  transform: scale(1.05);
+}
+
+.navbar__add-to-cart-text {
+  font-size: 12px;
+}
+
+.navbar__add-to-cart {
+  display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 1023px) {
+  /* Display the menu icon for mobile */
+  .navbar__menu-icon {
+    display: block;
+  }
+
+  /* Stack the navbar links vertically when the menu is open */
+  .navbar__links-list--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #1e3a8a; /* Blue 950 equivalent */
+    z-index: 10;
+    padding: 16px;
+  }
+
+  /* Hide the regular links when the mobile menu is open */
+  .navbar__links-list {
+    display: none;
+  }
+
+  .navbar__add-to-cart-mobile {
+    display: flex;
+    margin-top: 16px;
+  }
+}
+
+/* Media Query for larger screens (lg breakpoint) */
+@media (min-width: 1024px) {
+  .navbar__menu-icon {
+    display: none;
+  }
+  .navbar__links {
+    display: flex;
+  }
+  .navbar__links-list--open {
+    display: none;
+  }
+  .navbar__add-to-cart {
+    display: flex;
+    margin-left: auto;
+  }
+}
